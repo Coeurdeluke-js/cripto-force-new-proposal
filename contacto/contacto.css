@@ -1,0 +1,335 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+/* Gradiente de fondo */
+.bg-gradient {
+    background: linear-gradient(to bottom, #212121, #121212, #212121);
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.max-w-7xl {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Título principal */
+.main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.2rem; /* antes 2rem */
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Descripción principal */
+.main-description {
+    color: #d1d5db;
+    text-align: center;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem; /* antes 3rem */
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5; /* antes 1.7 */
+}
+
+/* Grid de contacto */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem; /* antes 2rem */
+    margin-top: 1.5rem; /* antes 3rem */
+    padding-bottom: 2rem; /* antes 3rem */
+}
+
+/* Tarjetas de contacto */
+.contact-card {
+    background-color: #1a1a1a;
+    border: 1px solid rgba(236, 77, 88, 0.1);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 280px; /* Altura mínima para igualar todas las tarjetas */
+}
+
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(236, 77, 88, 0.03), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(236, 77, 88, 0.15);
+    border-color: rgba(236, 77, 88, 0.3);
+}
+
+.contact-card:hover::before {
+    opacity: 1;
+}
+
+/* Contenedor del contenido superior */
+.contact-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Contenedor del contenido inferior (botón) */
+.contact-footer {
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+/* Íconos de contacto */
+.contact-icon {
+    font-size: 2.5rem;
+    color: #ec4d58;
+    margin-bottom: 1rem;
+    display: block;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-card:hover .contact-icon {
+    transform: scale(1.05);
+    color: #f56565;
+}
+
+/* Títulos de las tarjetas */
+.contact-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Descripción de las tarjetas */
+.contact-description {
+    color: #d1d5db;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+/* Botones de contacto */
+.contact-button {
+    display: inline-block;
+    background-color: #ec4d58;
+    color: #ffffff;
+    padding: 0.5rem 1.5rem; /* Altura reducida como solicitaste */
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    border: 2px solid transparent;
+    width: auto;
+    min-height: 40px; /* Altura mínima consistente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-button:hover {
+    background-color: #d63447;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(236, 77, 88, 0.3);
+}
+
+/* Horarios de contacto */
+.contact-hours {
+    margin-top: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-hours small {
+    color: #9ca3af;
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .main-title {
+        font-size: 3rem;
+    }
+    
+    .px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .contact-card {
+        min-height: 320px; /* Altura ajustada para tablets */
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .main-title {
+        font-size: 3.5rem;
+    }
+    
+    .contact-card {
+        padding: 2rem;
+        min-height: 350px; /* Altura ajustada para desktop */
+    }
+    
+    .contact-icon {
+        font-size: 3rem;
+    }
+    
+    .contact-title {
+        font-size: 1.5rem;
+    }
+    
+    .contact-description {
+        font-size: 1rem;
+    }
+}
+
+/* Utilidades */
+.pt-24 {
+    padding-top: 6rem;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+/* Animaciones adicionales */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.contact-card:nth-child(1) { animation-delay: 0.1s; }
+.contact-card:nth-child(2) { animation-delay: 0.2s; }
+.contact-card:nth-child(3) { animation-delay: 0.3s; }
+.contact-card:nth-child(4) { animation-delay: 0.4s; }
+.contact-card:nth-child(5) { animation-delay: 0.5s; }
+.contact-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ec4d58;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d63447;
+}
+
+/* Efectos especiales para botones */
+.contact-button {
+    overflow: hidden;
+}
+
+.contact-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.contact-button:hover::before {
+    left: 100%;
+}
+
+/* Mejoras para accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    .contact-card {
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    .contact-icon {
+        transition: none !important;
+    }
+    
+    .contact-button {
+        transition: none !important;
+    }
+}
+
+/* Focus states para accesibilidad */
+.contact-button:focus {
+    outline: 2px solid #ec4d58;
+    outline-offset: 2px;
+}
+
+.contact-card:focus-within {
+    border-color: rgba(236, 77, 88, 0.5);
+}

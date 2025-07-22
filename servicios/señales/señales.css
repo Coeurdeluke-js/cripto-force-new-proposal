@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    min-height: 100vh;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #121212;
+}
+
+.content {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.signals-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.signals-card {
+    background-color: #1a1a1a;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(236, 77, 88, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #d1d5db;
+    font-size: 1rem;
+    line-height: 1.625;
+}
+
+.benefits-section,
+.trust-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.benefits-list,
+.trust-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #d1d5db;
+    padding-left: 0;
+}
+
+.benefits-list li,
+.trust-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.625;
+}
+
+.benefits-list li::before,
+.trust-list li::before {
+    content: "•";
+    color: #ec4d58;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.benefits-list li strong,
+.trust-list li strong {
+    color: #ffffff;
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #6b7280;
+    background-color: transparent;
+    color: #6b7280;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.back-button:hover {
+    background-color: #6b7280;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #16a34a;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.whatsapp-button:hover {
+    background-color: #15803d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+}
+
+.whatsapp-button i {
+    font-size: 1.25rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .main-title {
+        font-size: 3rem;
+    }
+    
+    .card-title {
+        font-size: 1.75rem;
+    }
+    
+    .description {
+        font-size: 1.125rem;
+    }
+    
+    .benefits-list li,
+    .trust-list li {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .card-title {
+        font-size: 1.25rem;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+    
+    .back-button,
+    .whatsapp-button {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.signals-card {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.benefits-list li,
+.trust-list li {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.benefits-list li:nth-child(1) { animation-delay: 0.1s; }
+.benefits-list li:nth-child(2) { animation-delay: 0.2s; }
+.benefits-list li:nth-child(3) { animation-delay: 0.3s; }
+.benefits-list li:nth-child(4) { animation-delay: 0.4s; }
+.benefits-list li:nth-child(5) { animation-delay: 0.5s; }
+
+.trust-list li:nth-child(1) { animation-delay: 0.6s; }
+.trust-list li:nth-child(2) { animation-delay: 0.7s; }
+.trust-list li:nth-child(3) { animation-delay: 0.8s; }

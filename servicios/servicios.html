@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Servicios - Crypto Force</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="/public/logo.ico">
+    <link rel="stylesheet" href="servicios.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <script src="../navbar/navbar-loader.js"></script>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div class="min-h-screen">
+        <div class="container">
+            <h1 class="page-title">Nuestros Servicios</h1>
+<div id="volver-container"></div>
+<link rel="stylesheet" href="../volver/volver.css">
+<script src="../volver/volver.js"></script>
+<script>
+  fetch('../volver/volver.html')
+    .then(r => r.text())
+    .then(html => { document.getElementById('volver-container').innerHTML = html; });
+</script>
+
+            <div class="services-grid" id="servicesGrid">
+                <!-- Los servicios se cargarán desde JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="servicios.js"></script>
+</body>
+</html>

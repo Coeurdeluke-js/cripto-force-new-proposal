@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(to bottom, #212121, #121212, #121212);
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+.content {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.info-card {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(236, 77, 88, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.description {
+    color: #d1d5db;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.details-section,
+.requirements-section,
+.program-section,
+.resources-section,
+.schedule-section,
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.subsection-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.details-list,
+.requirements-list,
+.program-list,
+.resources-list,
+.schedule-list,
+.contact-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #d1d5db;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.details-list li,
+.requirements-list li,
+.program-list li,
+.resources-list li {
+    line-height: 1.6;
+}
+
+.program-list strong {
+    color: #ffffff;
+}
+
+.schedule-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.schedule-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.6;
+}
+
+.schedule-item i {
+    color: #ec4d58;
+    width: 20px;
+    flex-shrink: 0;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.6;
+}
+
+.contact-item i {
+    color: #ec4d58;
+    width: 20px;
+    flex-shrink: 0;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #374151;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #4b5563;
+}
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ec4d58;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.whatsapp-button:hover {
+    background-color: #d93f4a;
+}
+
+.whatsapp-button i {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .button-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .back-button,
+    .whatsapp-button {
+        justify-content: center;
+    }
+}
+
+/* Animaciones */
+.animate-in {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.info-card {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.main-title {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Efectos hover adicionales */
+.subsection-title {
+    transition: color 0.3s ease;
+}
+
+.subsection-title:hover {
+    color: #ec4d58;
+}
+
+.details-list li:hover,
+.requirements-list li:hover,
+.program-list li:hover,
+.resources-list li:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+.schedule-item:hover,
+.contact-item:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+.schedule-item:hover i,
+.contact-item:hover i {
+    color: #ffffff;
+}

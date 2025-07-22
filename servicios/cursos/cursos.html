@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Cursos</title>
+    <link rel="stylesheet" href="cursos.css">
+    <link rel="stylesheet" href="../../navbar/navbar.css">
+    <script src="../../navbar/navbar-loader.js"></script>
+    <link rel="icon" type="image/png" href="../../public/logo.ico">
+    <div id="navbar-container"></div>
+    <script>
+    fetch('../../navbar/navbar.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('navbar-container').innerHTML = html;
+            const script = document.createElement('script');
+            script.src = 'navbar/navbar.js';
+            document.head.appendChild(script);
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="main-title">Nuestros Cursos</h1>
+                <div id="volver-container"></div>
+                <link rel="stylesheet" href="../../../volver/volver.css">
+                <script src="../../../volver/volver.js"></script>
+                <script>
+                  fetch('../../../volver/volver.html')
+                    .then(r => r.text())
+                    .then(html => { document.getElementById('volver-container').innerHTML = html; });
+                </script>
+
+            <!-- Curso 1 -->
+            <div class="course-card">
+                <h2 class="course-title">Introducción y Estrategia para Ganar Dinero con Criptoactivos</h2>
+                <h3 class="course-subtitle">Aprende los Fundamentos y Diseña tu Estrategia Integral</h3>
+                <p class="course-description">
+                    Aprende los fundamentos del blockchain, las criptomonedas principales, cómo usar exchanges, estrategias de trading e inversión, y cómo crear una estrategia completa para ganar dinero con criptoactivos.
+                </p>
+                <div class="button-container">
+                    <a href="teorico/teorico.html" class="course-button">
+                        Ver Curso
+                    </a>
+                </div>
+            </div>
+
+            <!-- Curso 2 -->
+            <div class="course-card">
+                <h2 class="course-title">El Lado Oscuro de las Finanzas</h2>
+                <h3 class="course-subtitle">Construye una Estrategia de Trading Digna de un Profesional desde Cero</h3>
+                <p class="course-description">
+                    Domina los fundamentos del trading, gestión del riesgo, mercados de futuros, análisis técnico y avanzado, y técnicas profesionales para tomar decisiones estratégicas en los mercados financieros.
+                </p>
+                <div class="button-container">
+                    <a href="practico/practico.html" class="course-button">
+                        Ver Curso
+                    </a>
+                </div>
+            </div>
+
+            <!-- Curso 3 -->
+            <div class="course-card course-card-extended">
+                <h2 class="course-title">Curso Criptomonedas (De 0 a Pro)</h2>
+
+                <ul class="features-list">
+                    <li>✅ Acceso inmediato a formación grabada.</li>
+                    <li>✅ 15 días prueba.</li>
+                    <li>✅ A partir del día 16 se desbloquea el 100% del contenido.</li>
+                    <li>✅ Videos exclusivos (las claves que marcan la diferencia entre ganar y perder, y que jamás encontrarás en YouTube).</li>
+                    <li>✅ Acceso ilimitado a plataforma.</li>
+                    <li>✅ Clases en directo periódicamente.</li>
+                    <li>✅ Resolución de dudas.</li>
+                </ul>
+
+                <div class="bonus-section">
+                    <h3 class="bonus-title">BONUS INCLUIDOS:</h3>
+                    <ul class="bonus-list">
+                        <li>🎁 Curso completo Introducción a las cripto (2 horas)</li>
+                        <li>🎁 Curso Psicología del trading (3.5 horas)</li>
+                        <li>🎁 BONUS: Master class (x2)</li>
+                        <li>🎁 BONUS: Resúmenes de libros (x14)</li>
+                    </ul>
+                </div>
+
+                <div class="button-container-extended">
+                    <!-- Elimina el antiguo <button id="backButton" class="back-button">← Volver</button> -->
+                    <a href="https://hotmart.com/es/marketplace/productos/curso-criptomonedas-de-0-a-pro/M96551914V" class="course-button">
+                        Acceder al Curso
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="cursos.js"></script>
+</body>
+</html>

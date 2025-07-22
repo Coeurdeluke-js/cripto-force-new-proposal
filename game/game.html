@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sith Clash - Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="game.css">
+      <link rel="stylesheet" href="../navbar/navbar.css">
+    <script src="../navbar/navbar-loader.js"></script>
+    <div id="navbar-container"></div>
+    <script>
+    fetch('../navbar/navbar.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('navbar-container').innerHTML = html;
+            const script = document.createElement('script');
+            script.src = 'navbar/navbar.js';
+            document.head.appendChild(script);
+        });
+    </script>
+</head>
+<body>
+    <!-- Contenedor para navbar existente -->
+    <div id="navbar-container"></div>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <div class="container">
+            <h1 class="title">The Sith Clash</h1>
+            <p class="subtitle">El lado oscuro se está codificando...</p>
+            <div id="volver-container"></div>
+            <link rel="stylesheet" href="../volver/volver.css">
+            <script src="../volver/volver.js"></script>
+            <script>
+              fetch('../volver/volver.html')
+                .then(r => r.text())
+                .then(html => { document.getElementById('volver-container').innerHTML = html; });
+            </script>
+            
+            <div class="game-card">
+                <div class="game-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                
+                <div class="game-info">
+                    <p class="text">
+                        <strong>The Sith Clash</strong> es un juego de combate gamificado que forma parte integral del ecosistema <span class="highlight">Crypto Force</span>.
+                    </p>
+                    <p class="text">
+                        A través del juego, los usuarios podrán <strong>aprender</strong>, <strong>competir</strong> y <strong>ganar tokens</strong> que pueden canjearse por <strong>productos, clases, mentorías</strong> y más.
+                    </p>
+                    <p class="text">
+                        Actualmente, nuestro equipo de desarrollo está trabajando intensamente para ofrecer una experiencia inmersiva, estratégica y educativa, que potencie el crecimiento individual y colectivo dentro de la comunidad.
+                    </p>
+                    <p class="text">
+                        Este juego no solo busca entretener, sino ser una herramienta poderosa para integrar <strong>educación financiera, formación en criptomonedas</strong> y <strong>espíritu colaborativo</strong>.
+                    </p>
+                </div>
+
+                <div class="thank-you">
+                    <p class="thank-text">
+                        Gracias por tu paciencia y por ser parte del proceso de construcción de esta experiencia única.
+                    </p>
+                    <p class="power-text">
+                        ¡Pronto sabrás si eres digno del poder oscuro!
+                    </p>
+                </div>
+
+                <div class="button-container">
+                    <button class="back-btn" onclick="goBack()">
+                        <i class="fas fa-arrow-left"></i>
+                        Volver atrás
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>

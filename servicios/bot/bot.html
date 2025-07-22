@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot de Trading</title>
+    <link rel="stylesheet" href="bot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <link rel="stylesheet" href="../../navbar/navbar.css">
+    <script src="../../navbar/navbar-loader.js"></script>
+    <div id="navbar-container"></div>
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <section class="main-section">
+                <h1 class="main-title">Bot de Trading</h1>
+
+                        <div id="volver-container"></div>
+        <link rel="stylesheet" href="../../volver/volver.css">
+        <script src="../../volver/volver.js"></script>
+        <script>
+        fetch('../../volver/volver.html')
+            .then(r => r.text())
+            .then(html => { document.getElementById('volver-container').innerHTML = html; });
+        </script>
+                <div class="info-card">
+                    <h2 class="section-title">Trading Automático</h2>
+
+                    <p class="description">
+                        Nuestro bot opera de forma automática las 24 horas del día, los 7 días de la semana,
+                        con una rentabilidad dinámica estimada entre el <strong>10% y el 20% mensual</strong>.
+                    </p>
+
+                    <div class="features-section">
+                        <h3 class="subsection-title">Características principales:</h3>
+                        <ul class="features-list">
+                            <li>Funcionamiento continuo 24/7 sin intervención manual</li>
+                            <li>Rentabilidad dinámica: 10% a 20% mensual (aproximado)</li>
+                            <li>Monto mínimo requerido: 500 USDT</li>
+                            <li>Estrategias adaptativas según condiciones del mercado</li>
+                            <li>Panel de control para el seguimiento de operaciones</li>
+                            <li>Descuentos en comisiones según el nivel de fondeo</li>
+                        </ul>
+                    </div>
+
+                    <div class="requirements-section">
+                        <h3 class="subsection-title">Requisitos para Activar el Bot:</h3>
+                        <ul class="requirements-list">
+                            <li>Solicitar link de registro único de exchange (con afiliado)</li>
+                            <li>Fondear la cuenta en el exchange con al menos 500 USDT</li>
+                            <li>Crear API siguiendo el video instructivo</li>
+                            <li>Enviar claves API y contraseña para conectar al servidor del bot</li>
+                        </ul>
+                    </div>
+
+                    <div class="activation-section">
+                        <h3 class="subsection-title">Proceso de Activación y Renovación</h3>
+                        <ul class="activation-list">
+                            <li>
+                                <strong>Activación Inicial:</strong> Válida por 60 días desde la puesta en marcha del bot
+                            </li>
+                            <li>
+                                <strong>Renovación:</strong> Cada mes se comparte el 30% de las ganancias obtenidas en ese período
+                            </li>
+                            <li>El capital a operar debe estar en el apartado "Trading" del exchange</li>
+                        </ul>
+                    </div>
+
+                    <div class="considerations-section">
+                        <h3 class="subsection-title">Consideraciones Finales</h3>
+                        <ul class="considerations-list">
+                            <li>No debe realizarse trading manual en la cuenta donde opera el bot</li>
+                            <li>Para operar manualmente, se recomienda crear una <strong>subcuenta</strong> en el exchange</li>
+                            <li>Antes de aumentar capital, se debe informar al administrador</li>
+                            <li>Se permite participar en promociones o eventos de volumen</li>
+                        </ul>
+                    </div>
+
+                    <div class="button-container">
+                        <button id="backButton" class="back-button">
+                            <i class="fas fa-arrow-left"></i>
+                            Volver
+                        </button>
+                        <button id="whatsappButton" class="whatsapp-button">
+                            <i class="fab fa-whatsapp"></i>
+                            Activar Bot
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="bot.js"></script>
+</body>
+</html>
+<!-- Elimina el antiguo <button id="backButton" class="back-button">... -->

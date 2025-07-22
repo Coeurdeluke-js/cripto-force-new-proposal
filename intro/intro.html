@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción - The Crypto Force</title>
+    <link rel="icon" type="image/png" href="/public/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    
+    <div class="min-h-screen bg-gradient overflow-x-hidden">
+        <!-- Sección del video -->
+        <div class="video-container">
+            <div class="video-wrapper">
+                <video id="introVideo" class="video-player" controls poster="../public/images/intro-poster.png">
+                    <source src="/public/promo-video.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                
+                <!-- Mensaje de volumen -->
+                <div id="volumeMessage" class="volume-message">
+                    <div class="volume-content">
+                        <i class="fas fa-volume-up"></i>
+                        <span><strong>Sube el volumen para escuchar</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contenido principal -->
+        <div class="content-container">
+            <h1 class="main-title">
+                Introducción a <span class="highlight">Crypto Force</span>
+            </h1>
+            <div id="volver-container"></div>
+            <link rel="stylesheet" href="../volver/volver.css">
+            <script src="../volver/volver.js"></script>
+            <script>
+              fetch('../volver/volver.html')
+                .then(r => r.text())
+                .then(html => { document.getElementById('volver-container').innerHTML = html; });
+            </script>
+            
+            <div class="content-text">
+                <p>
+                    Hola equipo, quiero presentarles un proyecto que nació de una idea simple pero transformadora: 
+                    <strong>Crypto Force</strong>. Este sistema educativo está diseñado para 
+                    <strong>empoderarnos con conocimiento</strong> necesario para navegar el mundo de las criptomonedas e inversiones.
+                </p>
+
+                <p>
+                    <strong>Crypto Force</strong> es una <strong>comunidad</strong> donde aprendemos juntos, 
+                    crecemos como equipo y desarrollamos <strong>habilidades reales</strong> para tomar decisiones 
+                    <strong>informadas y responsables</strong> en un entorno de constante cambio.
+                </p>
+
+                <p>
+                    Sabemos que el mundo de las criptomonedas puede parecer <strong>confuso</strong>, incluso <strong>intimidante</strong>, 
+                    pero no tiene por qué serlo. Nuestro propósito con <strong>Crypto Force</strong> es <strong>acercar ese mundo</strong>  
+                    a las personas de forma <strong>accesible, comprensible y humana</strong>.
+                    Queremos crear un espacio donde no solo adquiramos habilidades, sino donde también 
+                    <strong>compartamos experiencias</strong>, aprendamos de nuestros errores y <strong>celebremos nuestros logros</strong>.
+                </p>
+
+                <h2 class="section-title">🚀 Lo que nos mueve</h2>
+                <p>
+                    En <strong>Crypto Force</strong>, creemos que el <strong>verdadero poder está en el conocimiento</strong>.
+                    Cuando entendemos cómo funcionan las cosas, <strong>ganamos confianza</strong> para tomar decisiones.
+                    El dinero, las inversiones y los mercados son <strong>herramientas</strong>, pero el conocimiento es 
+                    <strong>la verdadera libertad</strong> para usarlas a nuestro favor.
+                </p>
+
+                <p>
+                    Lo más valioso de este proyecto es la <strong>comunidad</strong> que estamos formando. Porque aquí, <strong>nadie está solo</strong>.
+                    Nos apoyamos, compartimos lo que aprendemos y <strong>crecemos juntos</strong>. 
+                    <strong>Crypto Force</strong> no es solo un equipo de trading, es una <strong>red de personas</strong> 
+                    que creen en el <strong>poder de la educación</strong> y el <strong>crecimiento colectivo</strong>.
+                </p>
+
+                <h2 class="section-title">📚 Empoderar a través del conocimiento</h2>
+                <p>
+                    Nuestro enfoque va más allá de enseñar a operar en los mercados. Queremos que cada uno de ustedes 
+                    <strong>tome el control de su futuro financiero</strong>, <strong>a su propio ritmo</strong>, con apoyo y sin presiones.
+                </p>
+
+                <p>
+                    Aquellos que se destaquen podrán <strong>compartir lo aprendido</strong> y además 
+                    <strong>recibir un beneficio económico</strong> por ello. Aquí, creemos que 
+                    <strong>enseñar y aprender son dos caras de la misma moneda</strong>, y ambas tienen un <strong>valor inmenso</strong>.
+                </p>
+
+                <h2 class="section-title">🔄 ¿Cómo seguimos adelante?</h2>
+                <p>
+                    Este es el momento de <strong>escucharnos</strong>. Cada opinión y comentario nos ayuda a <strong>dar forma</strong> 
+                    a este proyecto. <strong>Crypto Force</strong> es una <strong>construcción colectiva</strong>.
+                </p>
+
+                <p>
+                    No buscamos <strong>éxito inmediato</strong> ni <strong>ganancias rápidas</strong>. 
+                    Estamos construyendo <strong>algo a largo plazo</strong>, un espacio donde cada uno encuentre su camino 
+                    y <strong>avance a su ritmo</strong>.
+                </p>
+
+                <p>
+                    <strong>Crypto Force</strong> será lo que cada uno quiera que sea, porque aquí, 
+                    <strong>el poder del conocimiento es lo que realmente importa</strong>.
+                </p>
+
+                <p class="gratitude-text">
+                    <strong>Gracias</strong> por estar aquí, por ser parte de esta aventura y por <strong>confiar en el proceso</strong>. 
+                    Juntos, <strong>podemos crear algo realmente significativo</strong>.
+                </p>
+
+                <p class="signature">
+                    Con afecto, <br />El equipo de Crypto Force
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../navbar/navbar-loader.js"></script>
+    <script src="intro.js"></script>
+</body>
+</html>

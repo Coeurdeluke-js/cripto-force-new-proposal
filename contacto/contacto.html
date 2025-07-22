@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - The Crypto Force</title>
+    <link rel="icon" type="image/png" href="../public/logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div class="min-h-screen bg-gradient overflow-x-hidden pt-24 px-4">
+        <section class="max-w-7xl mx-auto">
+            <h1 class="main-title">Contacto</h1>
+            <p class="main-description">
+                Estamos aquí para ayudarte a alcanzar el éxito en el mundo del trading. Si tienes preguntas o necesitas más información, contáctanos a través de los siguientes canales.
+            </p>
+            <div id="volver-container"></div>
+            <link rel="stylesheet" href="../volver/volver.css">
+            <script src="../volver/volver.js"></script>
+            <script>
+              fetch('../volver/volver.html')
+                .then(r => r.text())
+                .then(html => { document.getElementById('volver-container').innerHTML = html; });
+            </script>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-content">
+                        <i class="fab fa-whatsapp contact-icon"></i>
+                        <h3 class="contact-title">WhatsApp</h3>
+                        <p class="contact-description">
+                            Únete a nuestro grupo de WhatsApp para recibir señales en tiempo real, análisis de mercado y conectar con otros traders.
+                        </p>
+                    </div>
+                    <div class="contact-footer">
+                        <a href="https://wa.me/+1234567890" class="contact-button" target="_blank">
+                            Únete al Grupo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-content">
+                        <i class="fab fa-instagram contact-icon"></i>
+                        <h3 class="contact-title">Instagram</h3>
+                        <p class="contact-description">
+                            Síguenos en Instagram para contenido educativo diario, tips de trading y actualizaciones del mercado.
+                        </p>
+                    </div>
+                    <div class="contact-footer">
+                        <a href="https://instagram.com/thecryptoforce" class="contact-button" target="_blank">
+                            Síguenos
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-content">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <h3 class="contact-title">Email Principal</h3>
+                        <p class="contact-description">
+                            Para consultas generales, información sobre cursos y soporte técnico. Respuesta en 24 horas.
+                        </p>
+                    </div>
+                    <div class="contact-footer">
+                        <a href="mailto:info@thecryptoforce.com" class="contact-button">
+                            info@thecryptoforce.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-content">
+                        <i class="fas fa-cog contact-icon"></i>
+                        <h3 class="contact-title">Servicios</h3>
+                        <p class="contact-description">
+                            Para consultas específicas sobre nuestros servicios de trading, mentorías y programas personalizados.
+                        </p>
+                    </div>
+                    <div class="contact-footer">
+                        <a href="mailto:services@thecryptoforce.com" class="contact-button">
+                            services@thecryptoforce.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-content">
+                        <i class="fas fa-info-circle contact-icon"></i>
+                        <h3 class="contact-title">Información</h3>
+                        <p class="contact-description">
+                            Canal alternativo para dudas sobre plataformas, recursos educativos y material de apoyo.
+                        </p>
+                    </div>
+                    <div class="contact-footer">
+                        <a href="mailto:infocryptoforce@gmail.com" class="contact-button">
+                            infocryptoforce@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-content">
+                        <i class="fas fa-headset contact-icon"></i>
+                        <h3 class="contact-title">Soporte</h3>
+                        <p class="contact-description">
+                            Nuestro equipo está disponible para resolver cualquier duda técnica y brindarte la mejor experiencia.
+                        </p>
+                    </div>
+                    <div class="contact-footer">
+                        <div class="contact-hours">
+                            <small>Horario: Lun-Vie 9:00-18:00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../navbar/navbar-loader.js"></script>
+    <script src="contacto.js"></script>
+</body>
+</html>

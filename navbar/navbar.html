@@ -1,0 +1,150 @@
+<!-- Fondo oscuro para móvil -->
+<div id="mobileBackdrop" class="mobile-backdrop"></div>
+
+<!-- NAVBAR SUPERIOR -->
+<div class="navbar-container">
+    <div class="navbar-bg"></div>
+    
+    <nav class="navbar">
+        <div class="navbar-content">
+            <!-- LOGO -->
+            <div class="navbar-logo">
+                <!-- Logo removido según solicitud -->
+            </div>
+
+            <!-- NAV DESKTOP -->
+            <div class="nav-desktop">
+                <a href="#" class="nav-link" data-page="index">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="#" class="nav-link" data-page="intro">
+                    <i class="fas fa-info-circle"></i> Introducción
+                </a>
+                <a href="#" class="nav-link" data-page="quienessomos">
+                    <i class="fas fa-users"></i> Quiénes Somos
+                </a>
+                <a href="#" class="nav-link" data-page="servicios">
+                    <i class="fas fa-cogs"></i> Servicios
+                </a>
+                <a href="#" class="nav-link" data-page="contacto">
+                    <i class="fas fa-envelope"></i> Contacto
+                </a>
+            </div>
+
+            <!-- BOTÓN JUEGO DESKTOP -->
+            <div class="nav-extra-desktop">
+                <a href="#" class="game-button" data-page="game">
+                    <i class="fas fa-bolt"></i> The Siths Clash
+                </a>
+            </div>
+
+            <!-- NAV MÓVIL COLAPSADA -->
+            <div class="nav-mobile-collapsed">
+                <div class="nav-mobile-icons">
+                    <a href="#" class="nav-mobile-icon" data-page="index" title="Home">
+                        <i class="fas fa-home"></i>
+                        <span class="nav-mobile-label">Home</span>
+                    </a>
+                    <a href="#" class="nav-mobile-icon" data-page="intro" title="Introducción">
+                        <i class="fas fa-info-circle"></i>
+                        <span class="nav-mobile-label">Intro</span>
+                    </a>
+                    <a href="#" class="nav-mobile-icon" data-page="quienessomos" title="Quiénes Somos">
+                        <i class="fas fa-users"></i>
+                        <span class="nav-mobile-label">Nosotros</span>
+                    </a>
+                    <a href="#" class="nav-mobile-icon" data-page="servicios" title="Servicios">
+                        <i class="fas fa-cogs"></i>
+                        <span class="nav-mobile-label">Servicios</span>
+                    </a>
+                    <a href="#" class="nav-mobile-icon" data-page="contacto" title="Contacto">
+                        <i class="fas fa-envelope"></i>
+                        <span class="nav-mobile-label">Contacto</span>
+                    </a>
+                </div>
+                <button id="mobileMenuBtn" class="mobile-menu-button" aria-label="Menú de navegación" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- NAVBAR MÓVIL DESPLEGADA -->
+<div id="mobileMenu" class="mobile-menu" role="navigation" aria-label="Menú de navegación móvil">
+    <div class="mobile-menu-header">
+        <h2 class="mobile-menu-title">Navegación</h2>
+        <button id="closeMobileMenu" class="mobile-close-button" aria-label="Cerrar menú">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    
+    <div class="mobile-menu-content">
+        <!-- Enlaces principales -->
+        <div class="mobile-nav-section">
+            <a href="#" class="mobile-nav-link" data-page="index">
+                <div class="mobile-nav-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="mobile-nav-text">
+                    <span class="mobile-nav-title">Home</span>
+                    <span class="mobile-nav-subtitle">Página principal</span>
+                </div>
+            </a>
+            <a href="#" class="mobile-nav-link" data-page="intro">
+                <div class="mobile-nav-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <div class="mobile-nav-text">
+                    <span class="mobile-nav-title">Introducción</span>
+                    <span class="mobile-nav-subtitle">Conoce más sobre nosotros</span>
+                </div>
+            </a>
+            <a href="#" class="mobile-nav-link" data-page="quienessomos">
+                <div class="mobile-nav-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="mobile-nav-text">
+                    <span class="mobile-nav-title">Quiénes Somos</span>
+                    <span class="mobile-nav-subtitle">Nuestro equipo</span>
+                </div>
+            </a>
+            <a href="#" class="mobile-nav-link" data-page="servicios">
+                <div class="mobile-nav-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="mobile-nav-text">
+                    <span class="mobile-nav-title">Servicios</span>
+                    <span class="mobile-nav-subtitle">Lo que ofrecemos</span>
+                </div>
+            </a>
+            <a href="#" class="mobile-nav-link" data-page="contacto">
+                <div class="mobile-nav-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="mobile-nav-text">
+                    <span class="mobile-nav-title">Contacto</span>
+                    <span class="mobile-nav-subtitle">Ponte en contacto</span>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Sección del juego -->
+        <div class="mobile-game-section">
+            <div class="mobile-game-divider">
+                <span>Juego</span>
+            </div>
+            <a href="#" class="mobile-game-button" data-page="game">
+                <div class="mobile-game-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="mobile-game-text">
+                    <span class="mobile-game-title">The Siths Clash</span>
+                    <span class="mobile-game-subtitle">¡Juega ahora!</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
