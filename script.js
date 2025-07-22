@@ -40,7 +40,7 @@ function updateSocialMediaMetaTags() {
     const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     
     // Seleccionar el logo apropiado según el tema
-    const logoImage = isDarkMode ? 'public/images/logo-dark-theme.png' : 'public/images/logo-white-theme.png';
+    const logoImage = isDarkMode ? 'public/logo-dark-theme.png' : 'public/logo-white-theme.png';
     const logoAlt = isDarkMode ? 'Crypto Force - Logo Tema Oscuro' : 'Crypto Force - Logo Tema Claro';
     
     // Actualizar meta tags de Open Graph
@@ -56,7 +56,7 @@ function updateSocialMediaMetaTags() {
     }
     
     // Actualizar meta tags de Twitter
-    const twitterImage = document.querySelector('meta[name="twitter:image"]');
+    const twitterImage = document.querySelector('meta[property="twitter:image"]');
     const twitterImageAlt = document.querySelector('meta[name="twitter:image:alt"]');
     
     if (twitterImage) {
